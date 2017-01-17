@@ -1,0 +1,11 @@
+disabled_rules: # rule identifiers to exclude from running
+  - trailing_whitespace
+  #- leading_whitespace
+  #- operator_whitespace
+
+file_length:
+  warning: 500
+
+type_body_length:
+  warning: 400
+  error: 450
