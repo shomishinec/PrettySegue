@@ -47,7 +47,7 @@ class ParamsViewController: UIViewController {
 			height = h
 		}
 
-		performSegue(withId: "area", sender: self) { (areaVC: AreaViewController) in
+		performSegue(withIdentifier: "area", sender: self) { (areaVC: AreaViewController) in
 			areaVC.height = height
 			areaVC.width = width
 		}
