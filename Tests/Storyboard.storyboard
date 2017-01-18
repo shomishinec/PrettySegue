@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D12b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Testable View Controller-->
+        <scene sceneID="Vft-1J-bdU">
+            <objects>
+                <viewController storyboardIdentifier="TestableViewController" id="1jt-rF-PcJ" customClass="TestableViewController" customModule="PrettySegueTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aba-aa-mgn"/>
+                        <viewControllerLayoutGuide type="bottom" id="JBz-Uu-Z9e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zWO-Nd-K0m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="n2h-p4-LMM" kind="show" identifier="segue" id="fSy-ml-2NT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JTg-6D-Fsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-306" y="162"/>
+        </scene>
+        <!--Other Testable View Controller-->
+        <scene sceneID="axV-QO-zF9">
+            <objects>
+                <viewController storyboardIdentifier="OtherTestableViewController" id="n2h-p4-LMM" customClass="OtherTestableViewController" customModule="PrettySegueTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8x8-fS-sJU"/>
+                        <viewControllerLayoutGuide type="bottom" id="E47-9q-YWJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QZ7-ND-Hpk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t5r-AK-WgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="163"/>
+        </scene>
+    </scenes>
+</document>

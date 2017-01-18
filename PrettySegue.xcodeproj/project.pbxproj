@@ -7,20 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C7FBC191E2E48BC005C7CF6 /* PrettySegue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C89AA761E2D4F170037C0B7 /* PrettySegue.framework */; };
 		6C89AA7B1E2D4F170037C0B7 /* PrettySegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C89AA791E2D4F170037C0B7 /* PrettySegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C89AA821E2D515A0037C0B7 /* PrettySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C89AA811E2D515A0037C0B7 /* PrettySegue.swift */; };
 		6C91A3771E2D745C00CD9C6D /* InternalSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C91A3761E2D745C00CD9C6D /* InternalSegue.swift */; };
+		6CFC0EDA1E2E4BF0007BA6F5 /* PrettySegueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7FBC231E2E4A8F005C7CF6 /* PrettySegueTests.swift */; };
+		6CFC0EE21E2E8D68007BA6F5 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CFC0EE11E2E8D68007BA6F5 /* Storyboard.storyboard */; };
+		6CFC0EE81E2E938F007BA6F5 /* OtherTestableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFC0EE61E2E938F007BA6F5 /* OtherTestableViewController.swift */; };
+		6CFC0EE91E2E938F007BA6F5 /* TestableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFC0EE71E2E938F007BA6F5 /* TestableViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6C7FBC1A1E2E48BC005C7CF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C89AA6D1E2D4F170037C0B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C89AA751E2D4F170037C0B7;
+			remoteInfo = PrettySegue;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		6C7FBC141E2E48BC005C7CF6 /* PrettySegueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrettySegueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C7FBC231E2E4A8F005C7CF6 /* PrettySegueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrettySegueTests.swift; sourceTree = "<group>"; };
 		6C89AA761E2D4F170037C0B7 /* PrettySegue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PrettySegue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C89AA791E2D4F170037C0B7 /* PrettySegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrettySegue.h; sourceTree = "<group>"; };
 		6C89AA7A1E2D4F170037C0B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C89AA811E2D515A0037C0B7 /* PrettySegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrettySegue.swift; sourceTree = "<group>"; };
 		6C91A3761E2D745C00CD9C6D /* InternalSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalSegue.swift; sourceTree = "<group>"; };
+		6CFC0EDB1E2E4C2A007BA6F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CFC0EE11E2E8D68007BA6F5 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		6CFC0EE61E2E938F007BA6F5 /* OtherTestableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherTestableViewController.swift; sourceTree = "<group>"; };
+		6CFC0EE71E2E938F007BA6F5 /* TestableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6C7FBC111E2E48BC005C7CF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7FBC191E2E48BC005C7CF6 /* PrettySegue.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C89AA721E2D4F170037C0B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -31,9 +60,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C7FBC0F1E2E484A005C7CF6 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6CFC0EE51E2E934B007BA6F5 /* Controllers */,
+				6CFC0EDB1E2E4C2A007BA6F5 /* Info.plist */,
+				6C7FBC231E2E4A8F005C7CF6 /* PrettySegueTests.swift */,
+				6CFC0EE11E2E8D68007BA6F5 /* Storyboard.storyboard */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		6C89AA6C1E2D4F170037C0B7 = {
 			isa = PBXGroup;
 			children = (
+				6C7FBC0F1E2E484A005C7CF6 /* Tests */,
 				6C89AA781E2D4F170037C0B7 /* Source */,
 				6C89AA771E2D4F170037C0B7 /* Products */,
 			);
@@ -43,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				6C89AA761E2D4F170037C0B7 /* PrettySegue.framework */,
+				6C7FBC141E2E48BC005C7CF6 /* PrettySegueTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +98,15 @@
 				6C91A3761E2D745C00CD9C6D /* InternalSegue.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		6CFC0EE51E2E934B007BA6F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6CFC0EE61E2E938F007BA6F5 /* OtherTestableViewController.swift */,
+				6CFC0EE71E2E938F007BA6F5 /* TestableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +123,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		6C7FBC131E2E48BC005C7CF6 /* PrettySegueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C7FBC1F1E2E48BC005C7CF6 /* Build configuration list for PBXNativeTarget "PrettySegueTests" */;
+			buildPhases = (
+				6C7FBC101E2E48BC005C7CF6 /* Sources */,
+				6C7FBC111E2E48BC005C7CF6 /* Frameworks */,
+				6C7FBC121E2E48BC005C7CF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C7FBC1B1E2E48BC005C7CF6 /* PBXTargetDependency */,
+			);
+			name = PrettySegueTests;
+			productName = PrettySegueTests;
+			productReference = 6C7FBC141E2E48BC005C7CF6 /* PrettySegueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6C89AA751E2D4F170037C0B7 /* PrettySegue */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C89AA7E1E2D4F170037C0B7 /* Build configuration list for PBXNativeTarget "PrettySegue" */;
@@ -97,12 +166,16 @@
 		6C89AA6D1E2D4F170037C0B7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = standev;
 				TargetAttributes = {
+					6C7FBC131E2E48BC005C7CF6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					6C89AA751E2D4F170037C0B7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = B7W6H5URAL;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -121,11 +194,20 @@
 			projectRoot = "";
 			targets = (
 				6C89AA751E2D4F170037C0B7 /* PrettySegue */,
+				6C7FBC131E2E48BC005C7CF6 /* PrettySegueTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6C7FBC121E2E48BC005C7CF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFC0EE21E2E8D68007BA6F5 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C89AA741E2D4F170037C0B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,6 +234,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6C7FBC101E2E48BC005C7CF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFC0EDA1E2E4BF0007BA6F5 /* PrettySegueTests.swift in Sources */,
+				6CFC0EE91E2E938F007BA6F5 /* TestableViewController.swift in Sources */,
+				6CFC0EE81E2E938F007BA6F5 /* OtherTestableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C89AA711E2D4F170037C0B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,7 +255,54 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6C7FBC1B1E2E48BC005C7CF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C89AA751E2D4F170037C0B7 /* PrettySegue */;
+			targetProxy = 6C7FBC1A1E2E48BC005C7CF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		6C7FBC1C1E2E48BC005C7CF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.stan-dev.PrettySegueTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6C7FBC1D1E2E48BC005C7CF6 /* Analyze */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.stan-dev.PrettySegueTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Analyze;
+		};
+		6C7FBC1E1E2E48BC005C7CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.stan-dev.PrettySegueTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		6C89AA7C1E2D4F170037C0B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -269,7 +408,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = B7W6H5URAL;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -290,7 +429,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = B7W6H5URAL;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -363,7 +502,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = B7W6H5URAL;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -381,6 +520,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6C7FBC1F1E2E48BC005C7CF6 /* Build configuration list for PBXNativeTarget "PrettySegueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C7FBC1C1E2E48BC005C7CF6 /* Debug */,
+				6C7FBC1D1E2E48BC005C7CF6 /* Analyze */,
+				6C7FBC1E1E2E48BC005C7CF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6C89AA701E2D4F170037C0B7 /* Build configuration list for PBXProject "PrettySegue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
