@@ -28,6 +28,15 @@ public typealias Controller = UIViewController
 
 extension UIViewController {
 
+	/**
+	Initiates the segue with the specified identifier from the current view controller's storyboard file.
+	- Parameters:
+		- identifier: Segue identifier
+	 	- sender: Please check the original method to get info about this parametr
+	 	- configurator: Closure with initialized destanation ViewController
+
+	 - Returns: Void
+	*/
 	public final func performSegue<C: Controller>(withIdentifier identifier: String,
 												  sender: Any? = nil,
 												  configurator: ((C) -> (Void))? = nil) {
