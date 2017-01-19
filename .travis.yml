@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode8.2.1
+xcode_project: PrettySegue.xcodeproj
+xcode_scheme: PrettySegue
+xcode_sdk: iphonesimulator10.2
